@@ -24,6 +24,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    background-color: var(--ne-Verylightgray);
 }
 
 a {
@@ -157,4 +159,22 @@ footer {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* media querry */
+@media (max-width:375px) {
+    body {
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    footer {
+        position: relative;
+        margin-top: 10px;
+    }
 }
